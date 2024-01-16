@@ -1,0 +1,27 @@
+body {
+    background: honeydew;
+    text-align: center;
+}
+
+#terulet {
+    background: white;
+    display: inline-block;
+    border: 1px solid grey;
+    text-align: center;
+    width: 700px;
+    padding: 10px;
+}
+
+#terulet img{
+    border: 2px solid white;
+    margin: 1px;
+}
+#terulet #kepek img:hover{
+    border: 2px solid red;
+}
+.adatok {
+    text-align: start;
+}
+#kovetkezo {
+    text-align: end;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mappák</title>
+</head>
+<body onload='start()'>
+    
+<div id="terulet">
+    <div id='kepek'></div>
+    <div class="adatok">
+        <img src="lakat.png" alt=""><span id='lakat'></span> db
+        <img src="papir.png" alt=""><span id='papir'></span> db
+        <img src="pendrive.png" alt=""><span id='pendrive'></span> db 
+        <img src="toll.png" alt=""><span id='toll'></span> db
+    </div>
+    <div id='kovetkezo'>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+
+    let kepek  =  ["semmi", "lakat", "papir", "pendrive", "toll"];
+    let rand;
+    function start(){
+        rand = Math.floor(Math.random()*4+1);
+        let tomb = [];
+        let i=0;
+        for(i = 0; i<7; i++){
+            for(let j = 0;j<10;j++){
+                document.getElementById('kepek').innerHTML += "<img src='semmi.png'>";
+            }
+        }
+        document.getElementById('kovetkezo').innerHTML += "<img src='" + kepek[rand] + ".png'>";
+        console.log(rand);
+    }
+
+</script>
